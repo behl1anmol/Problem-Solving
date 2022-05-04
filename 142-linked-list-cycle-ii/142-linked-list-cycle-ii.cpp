@@ -16,7 +16,7 @@ public:
         int k = 1;
         while(p1!=p2){
             p1 = p1->next;
-            cout<<"counting nodes";
+            //cout<<"counting nodes";
             k++;
         }
         cout<<k;
@@ -49,7 +49,7 @@ public:
             fast = fast->next->next;
             slow = slow->next;
             if(fast==slow) break;
-            cout<<"checking loop"; 
+            //cout<<"checking loop"; 
         }
         if(fast==NULL || fast->next==NULL) return NULL;
         
