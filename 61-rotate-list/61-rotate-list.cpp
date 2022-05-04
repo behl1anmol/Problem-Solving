@@ -26,7 +26,7 @@ public:
 
         if(len < k) k = k%len;
         len = len-k;
-        cout<<len;
+        //cout<<len;
         for(int i=0;i<len-1;i++){
             temp = temp->next;
         }
