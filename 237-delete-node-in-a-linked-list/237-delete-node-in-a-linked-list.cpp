@@ -14,13 +14,9 @@ public:
             delete(node);
             node = NULL;
         }
-        while(node->next->next!=NULL){
-            node->val = node->next->val;
-            node = node->next;
-        }
-        
         node->val = node->next->val;
-        delete(node->next);
-        node->next = NULL;
+        ListNode* del = node->next;
+        node->next = node->next->next;
+        delete(del);
     }
 };
