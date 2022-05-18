@@ -33,7 +33,7 @@ public:
             swap(l->val, r->val);
             return head;
         }
-        cout<<"left:"<<l->val<<" right:"<<r->val;
+        //cout<<"left:"<<l->val<<" right:"<<r->val;
         curr = l;
         n2 = r->next;
         
