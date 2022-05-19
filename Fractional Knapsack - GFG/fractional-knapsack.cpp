@@ -31,7 +31,7 @@ class Solution
     //Function to get the maximum total value in the knapsack.
     double fractionalKnapsack(int W, Item arr[], int n)
     {
-        int M=W;
+        int M=0;
         double ans = 0.0;
         
         sort(arr,arr+n,compare);
@@ -43,12 +43,12 @@ class Solution
         //cout<<endl;
         
         for(i=0;i<n;i++){
-            if(arr[i].weight<=M){
+            if(M+arr[i].weight<=W){
                 ans += arr[i].value;
-                M -=arr[i].weight;
+                M +=arr[i].weight;
             }
             else{
-                ans+= ((double)arr[i].value/(double)arr[i].weight)*M;
+                ans+= ((double)arr[i].value/(double)arr[i].weight)*(W-M);
                 break;
             };
         }
