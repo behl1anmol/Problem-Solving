@@ -16,10 +16,11 @@ public:
     
         
         for(int i=0; i<n; i++){
-            /*for(int j=0,k=n-1; j!=k; j++,k--){
+            for(int j=0,k=n-1; j<k; j++,k--){
+                cout<<"i:"<<i<<" "<<"j:"<<j<<" "<<"k:"<<k<<" "<<endl;
                 swap(matrix[i][j], matrix[i][k]);
-            }*/
-            reverse(matrix[i].begin(), matrix[i].end());
+            }
+            //reverse(matrix[i].begin(), matrix[i].end());
         }
     }
 };
