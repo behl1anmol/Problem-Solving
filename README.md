@@ -9,8 +9,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 <h2 class="has-text-align-left">Why trust the Striver SDE sheet?&nbsp;</h2>
 <p>This is sheet is prepared by Raj Vikramaditya A.K.A Striver, Candidate Master, 6*, who has bagged offers from <strong>Google</strong> Warsaw, <strong>Facebook</strong> London, <strong>Media.net</strong>(Directi). He has also interned at <strong>Amazon</strong> India. He is also one of the top educators at Unacademy and was at GeeksforGeeks as well. Not only this, hundreds of students cleared interviews of top companies with the help of this sheet. What are you waiting for? </p>
 <p><span class="has-inline-color has-vivid-red-color"><strong>Disclaimer</strong></span><em><span class="has-inline-color has-vivid-red-color">: Only start doing these problems if you feel you are comfortable with solving the basic problems of DSA. Once you are, you can start preparing for these problems, because these problems are solely interview-based.</span></em></p>
-<p class="wa_btn" style="text-align: center;"><a class="wa_share" href="https://wa.me/?text=Hi,%0a%0aI%20have%20found%20the%20best%20free%20resource%20to%20prepare%20for%20product%20companies%20-%20Amazon,%20Microsoft%20etc%20interview.%0a%0aCheck%20out%20Striver's%20SDE%20Sheet:%20https://bit.ly/3zquqSu%0a%0aEverything%20you%20need%20for%20structured%20interview%20prep%20for%20free.">Share on Whatsapp</a></p>
-<p><strong>Note:</strong> If you find the sheet useful, you can also contribute an article or solution for any problem to be published on takeuforward.org! <a href="https://takeuforward.org/contribute/help-us-grow-takeuforward/" data-type="URL" data-id="https://takeuforward.org/contribute/help-us-grow-takeuforward/">Click here for more details</a>.</p>
+
 <details>
 <summary><b>Day 1</b>: Arrays</summary>
 <p>Find both C++/Java codes of all problem in the articles in the first column.</p>
