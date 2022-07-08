@@ -1,10 +1,9 @@
 # Striver-SDE-Sheet
-Collection of Coding questions to ace the coding interview by [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of Coding questions to ace the coding interview by [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)! - Repo Created using [LeetHub](https://github.com/QasimWani/LeetHub)
 
 <div class="entry-content clearfix">
-<figure class="wp-block-image size-large"><img alt="Striver's SDE Sheet" data-srcset="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-scaled.webp 1024w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-300x150.webp 300w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-768x384.webp 768w" data-src="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-1024x512.webp" data-sizes="(max-width: 1024px) 100vw, 1024px" class="wp-image-2127 lazyloaded" src="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-1024x512.webp" sizes="(max-width: 1024px) 100vw, 1024px" srcset="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-scaled.webp 1024w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-300x150.webp 300w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-768x384.webp 768w" width="1024" height="512"><noscript><img width="1024" height="512" src="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-1024x512.webp" alt="Striver's SDE Sheet" class="wp-image-2127" srcset="https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-scaled.webp 1024w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-300x150.webp 300w, https://takeuforward.org/wp-content/uploads/2022/01/Strivers-SDE-Sheet-1-768x384.webp 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript><figcaption>Striver’s SDE Sheet</figcaption></figure>
-<p class="has-text-align-center">(Striver’s SDE Sheet – Sheet for the sole purpose of quick revision and preparation in less time focusing on top coding interview problems)</p>
-<p class="has-text-align-center"><span style="text-decoration: underline;">Made with <span class="has-inline-color has-accent-color">love</span>&nbsp;by takeUforward</span>!</p>
+
+
 <h1 class="has-text-align-center">What is Striver SDE Sheet?&nbsp;</h1>
 <p>SDE Sheet contains very handily crafted and picked top coding interview questions from different topics of Data Structures &amp; Algorithms. These questions are one of the most asked coding interview questions in coding interviews of companies like Amazon, Microsoft, Media.net, Flipkart, etc, and cover almost all of the concepts related to Data Structure &amp; Algorithms.</p>
 <h2 class="has-text-align-left">Why trust the Striver SDE sheet?&nbsp;</h2>
@@ -1573,11 +1572,6 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 <summary><b>Day 31</b>: Project Overview</summary>
 <p>Make a note of how will your represent your projects, and prepare all questions related to tech which you have used in your projects. Prepare a note which you can say for 3-10 minutes when he asks you that say something about the project.</p>
 </details>
-<blockquote class="wp-block-quote"><p>Hurrah!! You are ready for your placement after a month of hard work without a cheat day.&nbsp;</p><cite>~Striver</cite></blockquote>
-<p>Share the sheet with your friends, created with love for takeUforward fam!</p>
-<p class="wa_btn" style="text-align: center;"><a class="wa_share" href="https://wa.me/?text=Hi,%0a%0aI%20have%20found%20the%20best%20free%20resource%20to%20prepare%20for%20product%20companies%20-%20Amazon,%20Microsoft%20etc%20interview.%0a%0aCheck%20out%20Striver's%20SDE%20Sheet:%20https://bit.ly/3zquqSu%0a%0aEverything%20you%20need%20for%20structured%20interview%20prep%20for%20free.">Share on Whatsapp</a></p>
-<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4354768384472857" data-ad-slot="8703036858"></ins>
-<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 
 </div>
 
