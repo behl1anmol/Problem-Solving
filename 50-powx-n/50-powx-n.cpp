@@ -2,16 +2,16 @@ class Solution {
 public:
     
     double binaryExponentiation(double a, long long int n){
-    if(n==0)
-        return 1;
+        double res=1;
 
-    double res = binaryExponentiation(a,n/2);
-
-    if(n%2!=0)
-        return res*res*a;
-    else
-        return res*res;
-            
+        while(n>0){
+            if(n&1){
+                res=res*a;
+            }
+            a=a*a;
+            n>>=1;
+        }
+        return res;   
 }
     
     
