@@ -24,7 +24,7 @@ public:
         
         for(int i=0;i<n;i++){
                 if(target >= matrix[i][0] && target <= matrix[i][m-1])
-                    return binarySearch(matrix, i, 0, m, target);
+                    return binary_search(matrix[i].begin(), matrix[i].end(), target);
         }
         
         return false;
