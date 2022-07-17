@@ -12,20 +12,12 @@ public:
         int down_path = 0;
         
         if(j < n-1){
-            if(visited[i][j+1] > 0){
-                right_path = visited[i][j+1];
-            }
-            else{
-                right_path = _uniquePaths(i, j+1, m, n, visited, ans);
-            }
+            if(visited[i][j+1] > 0) right_path = visited[i][j+1];
+            else right_path = _uniquePaths(i, j+1, m, n, visited, ans);
         }
         if(i < m-1){
-            if(visited[i+1][j] > 0){
-                down_path = visited[i+1][j];
-            }
-            else{
-                down_path = _uniquePaths(i+1, j, m, n, visited, ans);
-            }
+            if(visited[i+1][j] > 0) down_path = visited[i+1][j];
+            else down_path = _uniquePaths(i+1, j, m, n, visited, ans);
         }
         
         visited[i][j] = right_path + down_path;
