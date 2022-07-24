@@ -10,11 +10,11 @@ int singleNonDuplicate(int* nums, int numsSize){
         
         if(mid%2!=0){
             printf("%d %d\n",mid, nums[mid]);
-            if(nums[mid] == nums[mid+1]) high = mid-1;
+            if(nums[mid] == nums[mid+1]) high = mid-1; //right array
             else low = mid+1;
         }
         else{
-            if(nums[mid] != nums[mid+1]) high = mid-1;
+            if(nums[mid] != nums[mid+1]) high = mid-1; //right array
             else low = mid+1;
         }
     }
