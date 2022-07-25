@@ -12,11 +12,11 @@ public:
             
             if(target==nums[mid]) return mid;
             
-            if(nums[low]<=nums[mid]){
+            if(nums[low]<=nums[mid]){ //left array ia ascending
                 if(target>=nums[low] && target<nums[mid]) high = mid-1;
                 else low = mid+1;
             }
-            else{
+            else{ //right array is ascending
                 if(target<=nums[high] && target>nums[mid]) low = mid+1;
                 else high = mid-1;
             }
