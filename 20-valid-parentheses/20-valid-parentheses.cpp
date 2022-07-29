@@ -6,8 +6,8 @@ public:
         cout<<n;
         
         if(n==1) return false;
-        if(s[0]==')' || s[0]=='}' || s[0]==']') return false;
-        if(s[n-1]=='(' || s[n-1]=='[' || s[n-1]=='{') return false;
+        //if(s[0]==')' || s[0]=='}' || s[0]==']') return false;
+        //if(s[n-1]=='(' || s[n-1]=='[' || s[n-1]=='{') return false;
         
         stack<char> st;
         
