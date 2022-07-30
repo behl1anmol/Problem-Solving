@@ -5,7 +5,7 @@ public:
         int n2 = nums2.size();
         
         stack<int> st;
-        map<int,int>nge;
+        unordered_map<int,int>nge;
         
         for(int i=n2-1;i>=0;i--){
             
