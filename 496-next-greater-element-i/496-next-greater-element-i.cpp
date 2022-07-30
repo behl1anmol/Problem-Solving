@@ -28,10 +28,6 @@ public:
             ans.push_back(nge[nums1[i]]);
         }
         
-        
-
-        
-        
         return ans;
     }
 };
