@@ -12,7 +12,7 @@ public:
     
     int kthSmallest(vector<vector<int>>& matrix, int k) {
         
-        //Approach 2 Binary Search
+        //Approach 2 Binary Search T(n) = O(nlog(right-left))
         int n = matrix.size();
         int left = matrix[0][0];
         int right = matrix[n-1][n-1];
