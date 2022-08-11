@@ -26,10 +26,6 @@ public:
         
         calculate_inorder(root, inorder);
         
-        for(int i=0;i<inorder.size();i++){
-            cout<<inorder[i];
-        }
-        
          if(unique(inorder.begin(), inorder.end()) != inorder.end())
              return false;
         
