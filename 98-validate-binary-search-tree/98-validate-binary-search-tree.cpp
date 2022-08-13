@@ -12,25 +12,14 @@
 class Solution {
 public:
     
-    void calculate_inorder(TreeNode* root, vector<int> &inorder){
-        if(!root) return;
-        
-        if(root->left) calculate_inorder(root->left, inorder);
-        inorder.push_back(root->val);
-        if(root->right) calculate_inorder(root->right, inorder);
+    bool check_BST(TreeNode* root, long start, long end){
+        if(!root) return true;
+        if(root->val <= start || root->val >= end) return false;
+        return check_BST(root->left, start, root->val) && check_BST(root->right, root->val, end);
     }
     
-    
     bool isValidBST(TreeNode* root) {
-        vector<int> inorder;
+        return check_BST(root, LONG_MIN, LONG_MAX);
         
-        calculate_inorder(root, inorder);
-        
-         if(unique(inorder.begin(), inorder.end()) != inorder.end())
-             return false;
-        
-        bool asc = is_sorted(inorder.begin(), inorder.end());
-                
-        return asc;
     }
 };
