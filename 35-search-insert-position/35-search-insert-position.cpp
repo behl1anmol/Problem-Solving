@@ -7,8 +7,7 @@ public:
         int r = n-1;
         
         while(l<=r){
-            int mid = (l+r)/2;
-            cout<<"mid: "<<mid<<" ";
+            int mid = l+(r-l)/2;
             
             if(nums[mid]==target) return mid;
             
