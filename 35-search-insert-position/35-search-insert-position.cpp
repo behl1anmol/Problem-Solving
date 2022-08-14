@@ -18,8 +18,6 @@ public:
             
         }
         
-        cout<<l<<r;
-        
         return l;
         
     }
