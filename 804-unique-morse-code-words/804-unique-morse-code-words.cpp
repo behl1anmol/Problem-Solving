@@ -15,7 +15,6 @@ public:
                 s = s + code[words[i][j]-'a'];
                 
             }
-            cout<<s<<endl;
             morse.insert(s);
         }
         return morse.size();
