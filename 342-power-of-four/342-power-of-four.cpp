@@ -1,5 +1,6 @@
 class Solution {
 public:
     bool isPowerOfFour(int n) {
-        return n > 0 and not(n & (n - 1)) and ((n & 1431655765) == n);    }
+        return n > 0 && !(n&(n-1)) && !((n-1)%3);   
+    }
 };
