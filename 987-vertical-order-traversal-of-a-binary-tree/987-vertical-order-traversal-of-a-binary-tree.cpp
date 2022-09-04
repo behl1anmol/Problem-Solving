@@ -14,7 +14,6 @@ public:
     map<int, map<int, multiset<int>>> mp;
     
     void calculateVerticalOrder(TreeNode* root, int distance, int level){
-        if(!root) return;
         
         mp[distance][level].insert(root->val);
         if(root->left) calculateVerticalOrder(root->left, distance-1, level+1);
