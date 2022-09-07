@@ -17,12 +17,15 @@ public:
         string ans = std::to_string(root->val);
         
         string left = tree2str(root->left);
-        if(root->right || root->left ) ans+="(" + left + ")";
+        //if(root->right || root->left ) ans+="(" + left + ")";
         //if(root->left) ans+= "(" + left + ")";
             
         string right = tree2str(root->right);
-        
-        if(right!="") ans += "(" + right + ")";
+        if(root->right || root->left ){
+          ans+="(" + left + ")";
+          if(right!="") ans += "(" + right + ")";
+        } 
+        //if(right!="") ans += "(" + right + ")";
         
         return ans;
         
