@@ -13,16 +13,12 @@ class Solution {
 public:
     string tree2str(TreeNode* root) {
         
-        if(root==NULL){
-            cout<<"inside"<<endl;
-            return "";
-        }
+        if(root==NULL) return "";
         string ans = std::to_string(root->val);
         
         string left = tree2str(root->left);
-        if(left=="" && root->right) ans+="()";
-        if(root->left) ans+= "(" + left + ")";
-        //ans += ")";
+        if(root->right || root->left ) ans+="(" + left + ")";
+        //if(root->left) ans+= "(" + left + ")";
             
         string right = tree2str(root->right);
         
