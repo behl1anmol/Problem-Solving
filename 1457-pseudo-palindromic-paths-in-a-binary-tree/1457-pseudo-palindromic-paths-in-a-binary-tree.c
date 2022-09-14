@@ -17,11 +17,7 @@ int pseudoPalindromicPathsUtils(struct TreeNode* root, int path){
         return path & (path-1)?0:1;
     }
     return pseudoPalindromicPathsUtils(root->left, path) + pseudoPalindromicPathsUtils(root->right, path);
-    
-    
-    
-    
-    
+     
 }
 
 
