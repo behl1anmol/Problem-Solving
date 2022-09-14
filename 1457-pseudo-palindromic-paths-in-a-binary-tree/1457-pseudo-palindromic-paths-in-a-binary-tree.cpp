@@ -21,7 +21,7 @@ public:
             if(i%2 != 0) odd++;
         }
         if(odd>1) return 0;
-        //cout<<endl<<endl;
+
         return 1;
         
     }
