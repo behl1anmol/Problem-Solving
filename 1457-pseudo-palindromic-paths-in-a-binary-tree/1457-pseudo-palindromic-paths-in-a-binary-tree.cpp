@@ -15,9 +15,9 @@ public:
     int checkPseudoPalindrome(vector<int> arr){
         
         int odd = 0;
-        //cout<<"count: "<<c<<endl;
+
         for(auto i : arr){
-            //cout<<key<<":" <<value<<endl;
+
             if(i%2 != 0) odd++;
         }
         if(odd>1) return 0;
@@ -33,20 +33,13 @@ public:
         
         arr[root->val]++;
         
-        /*cout<<"printing map:"<<endl;
-        for(auto &[key,value] : mp){
-            cout<<"key:"<<key<<" value:"<<value<<endl;
-        }*/
-        
         int left = pseudoPalindromicPathsUtils(root->left, arr, ans);
-        //cout<<"left:"<<left<<endl;
+
         int right = pseudoPalindromicPathsUtils(root->right, arr, ans);
-        //cout<<"right:"<<right<<endl;
         
         
         if(left == -1 && right == -1)
             ans += checkPseudoPalindrome(arr);
-        //cout<<"ans:"<<ans<<endl;
         
         return ans + (left==-1?0:left) + (right==-1?0:right);
     }
