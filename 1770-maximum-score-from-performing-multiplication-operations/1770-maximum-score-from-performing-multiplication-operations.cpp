@@ -8,9 +8,8 @@ public:
         if(dp[i][j]!=INT_MIN)
             return dp[i][j];
         
-           int left = maximumScoreUtils(nums, multipliers, i+1, j+1, n) + (nums[i]*multipliers[j]);
-           int right = maximumScoreUtils(nums, multipliers, i, j+1,n) + (nums[(n-1)-(j-i)]*multipliers[j]);
-        return dp[i][j] = max(left,right);
+           dp[i][j] = max(maximumScoreUtils(nums, multipliers, i+1, j+1, n) + (nums[i]*multipliers[j]) ,maximumScoreUtils(nums, multipliers, i, j+1,n) + (nums[(n-1)-(j-i)]*multipliers[j]));
+        return dp[i][j];
     }
     
     int maximumScore(vector<int>& nums, vector<int>& multipliers) {
