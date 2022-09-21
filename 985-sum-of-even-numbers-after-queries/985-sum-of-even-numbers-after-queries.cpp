@@ -33,20 +33,17 @@ public:
             
             if(EvenBefore && EvenNow){
                 sum = sum + val;
-                ans.push_back(sum);
             }
             else if (!EvenBefore && EvenNow){
                 sum = sum + nums[idx];
-                ans.push_back(sum);
             }
             else if(EvenBefore && !EvenNow){
 
                 sum = sum - preVal;
-                ans.push_back(sum);
             }
-            else{
-                ans.push_back(sum);
-            }
+
+            ans.push_back(sum);
+
         }
         
         return ans;
