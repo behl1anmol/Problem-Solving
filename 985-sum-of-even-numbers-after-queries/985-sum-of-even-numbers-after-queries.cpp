@@ -31,17 +31,12 @@ public:
             bool EvenNow = (nums[idx]%2==0);
                 
             
-            if(EvenBefore && EvenNow){
+            if(EvenBefore && EvenNow)
                 sum = sum + val;
-            }
-            else if (!EvenBefore && EvenNow){
+            else if (!EvenBefore && EvenNow)
                 sum = sum + nums[idx];
-            }
-            else if(EvenBefore && !EvenNow){
-
+            else if(EvenBefore && !EvenNow)
                 sum = sum - preVal;
-            }
-
             ans.push_back(sum);
 
         }
