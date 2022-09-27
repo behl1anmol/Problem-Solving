@@ -12,7 +12,6 @@ public:
                 
                 if(dominoes[i]=='R'){
                     if(i<n-2 && dominoes[i+2]=='L'){
-                        //cout<<i<<" "<<i+2<<endl;
                         continue;
                     }
                     else if(i<n-1 && dominoes[i+1]!='L')curr[i+1] = 'R';
@@ -24,7 +23,6 @@ public:
                     else if(i>0 && dominoes[i-1]!='R') curr[i-1] = 'L';
                 }
             }
-            //cout<<dominoes<<" "<<curr<<endl;
             prev = dominoes;
             dominoes = curr;
             
