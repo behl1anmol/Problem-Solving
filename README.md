@@ -1,15 +1,9 @@
-# Striver-SDE-Sheet
-Collection of Coding questions to ace the coding interview by [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)! - Repo Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+# Problem-Solving
+Collection of Coding questions to ace the coding interview by [takeUforward](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)! and various different problems on Leetcode - Repo Created using [LeetHub](https://github.com/QasimWani/LeetHub)
 
 <div class="entry-content clearfix">
 
-
-<h1 class="has-text-align-center">What is Striver SDE Sheet?&nbsp;</h1>
-<p>SDE Sheet contains very handily crafted and picked top coding interview questions from different topics of Data Structures &amp; Algorithms. These questions are one of the most asked coding interview questions in coding interviews of companies like Amazon, Microsoft, Media.net, Flipkart, etc, and cover almost all of the concepts related to Data Structure &amp; Algorithms.</p>
-<h2 class="has-text-align-left">Why trust the Striver SDE sheet?&nbsp;</h2>
-<p>This is sheet is prepared by Raj Vikramaditya A.K.A Striver, Candidate Master, 6*, who has bagged offers from <strong>Google</strong> Warsaw, <strong>Facebook</strong> London, <strong>Media.net</strong>(Directi). He has also interned at <strong>Amazon</strong> India. He is also one of the top educators at Unacademy and was at GeeksforGeeks as well. Not only this, hundreds of students cleared interviews of top companies with the help of this sheet. What are you waiting for? </p>
-<p><span class="has-inline-color has-vivid-red-color"><strong>Disclaimer</strong></span><em><span class="has-inline-color has-vivid-red-color">: Only start doing these problems if you feel you are comfortable with solving the basic problems of DSA. Once you are, you can start preparing for these problems, because these problems are solely interview-based.</span></em></p>
-
+# Striver's SDE Sheet 
 <details>
 <summary><b>Day 1</b>: Arrays</summary>
 <p>Find both C++/Java codes of all problem in the articles in the first column.</p>
