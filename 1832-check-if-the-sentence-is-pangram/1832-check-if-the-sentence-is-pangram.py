@@ -1,11 +1,9 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
-        d  = dict()
         
-        for i in sentence:
-            if i not in d:
-                d[i] = 1
-            else:
-                d[i] += 1
+        ele = set()
         
-        return len(d) == 26;
+        for i in range(0,len(sentence)):
+            ele.add(sentence[i])
+
+        return len(ele) == 26;
