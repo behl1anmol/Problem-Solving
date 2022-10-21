@@ -6,7 +6,6 @@ class Solution:
         for i in range(n):
             nums.sort()
             ele = min(nums[i:])
-            #print(ele)
             if ele == 0:
                 if nums.count(0) == n: return ans
                 else: continue
