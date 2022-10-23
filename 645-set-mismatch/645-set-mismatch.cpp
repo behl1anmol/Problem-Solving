@@ -1,39 +1,17 @@
 class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
-        
         int n = nums.size();
         
-        map<int,int>mp;
+        set<int> st(nums.begin(), nums.end());
         
-        set<int>st;
+        int s = accumulate(st.begin(), st.end(), 0);
+        int arr_sum = accumulate(nums.begin(), nums.end(), 0);
         
-        for(int i=0;i<n;i++){
-            mp[nums[i]]++;
-            st.insert(nums[i]);
-        }
+        int sum = n*(n+1)/2;
+        int r = arr_sum - s;
+        int miss = sum - s; 
         
-        int m = 1;
-        for(auto i:st){
-            if(i != m)break;
-            m++;
-        }
-        
-        //cout<<m<<endl<<n-1;
-        vector<int>ans(2);
-        
-        ans[1] = m;
-        int ele = nums[0];
-        int idx = 0;
-        
-        for(int i=0;i<n;i++){
-            if(mp[nums[i]]>1){
-                ans[0] = nums[i];
-                idx = i;
-                break;
-            }
-        }
-        
-        return ans;
+        return {r, miss};
     }
 };
