@@ -3,10 +3,7 @@ public:
     vector<int> findErrorNums(vector<int>& nums) {
         
         int n = nums.size();
-        if(n==2){
-            if(nums[0]==1) return {1,2};
-            return {2,1};
-        }
+        
         map<int,int>mp;
         
         set<int>st;
