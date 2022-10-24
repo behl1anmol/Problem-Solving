@@ -6,12 +6,20 @@ class Solution:
         
         for i in d.elements():
             
-            if d[i] > 1: return False;
-        return True;
-               
+            if d[i] > 1: return False
+        return True
+    
+    def listToTuple(function):
+        def wrapper(*args):
+            args = [tuple(x) if type(x) == list else x for x in args]
+            result = function(*args)
+            result = tuple(result) if type(result) == list else result
+            return result
+        return wrapper
+    
+    @listToTuple
+    @lru_cache(None)
     def maxLength(self, arr: List[str]) -> int:
-        
-        #ans = 0
         
         def solution(arr, i, n,curr):
             if not self.unique(curr): return
