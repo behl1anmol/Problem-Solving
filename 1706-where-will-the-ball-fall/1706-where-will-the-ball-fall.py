@@ -4,15 +4,9 @@ class Solution:
         n = len(grid)
         m =  len(grid[0])
         
-        def listToTuple(function):
-            def wrapper(*args):   
-                args = [tuple(map(tuple, x)) if type(x) == list else x for x in args]
-                result = function(*args)
-                result = tuple(result) if type(result) == list else result
-                return result
-            return wrapper
+
         
-        @listToTuple
+
         @lru_cache(None)
         def dfs(grid, row, column, n, m):
             if row == n: return column
@@ -23,9 +17,9 @@ class Solution:
             return dfs(grid, row+1, nextColumn, n, m)
         
         ans = []
-        
+        newGrid = tuple(map(tuple, grid))
         for i in range(0,m):
-            res = dfs(grid, 0, i, n, m)
+            res = dfs(newGrid, 0, i, n, m)
             ans.append(res)
             
         return ans
