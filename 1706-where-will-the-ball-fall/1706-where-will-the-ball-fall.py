@@ -4,9 +4,6 @@ class Solution:
         n = len(grid)
         m =  len(grid[0])
         
-
-        
-
         @lru_cache(None)
         def dfs(grid, row, column, n, m):
             if row == n: return column
