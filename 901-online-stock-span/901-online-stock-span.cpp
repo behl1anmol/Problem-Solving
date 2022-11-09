@@ -11,7 +11,7 @@ public:
         stock.push_back(price);
         sz = stock.size();
         int span = 1;
-        if(sz==1 || (sz>1 && stock[sz-2] > stock[sz-1])){
+        if(sz==1){
             cache[price] = span;
             return span;
         }
