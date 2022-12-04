@@ -22,11 +22,9 @@ public:
         while(s[i] == '0') i++;
         
         //checking for digit
-        int dig = 0;
-        while(dig < 12 && i<n && isdigit(s[i])){
+        while(number < INT_MAX && i<n && isdigit(s[i])){
             number = number*10 + (s[i] - '0');
             i++;
-            dig++;
         }
         
         if(number > INT_MAX) return flag == 1? INT_MIN : INT_MAX;
