@@ -11,11 +11,12 @@ public:
                 st.pop();
             }
             st.push(num[i]);
+            
+            //important condition to prevent TLE
             if(st.size() == 1 && num[i]== '0'){
                 st.pop();
             }
         }
-        //cout<<st.size()<<" "<<k;
         
         while(!st.empty() && k>0){
             st.pop();
