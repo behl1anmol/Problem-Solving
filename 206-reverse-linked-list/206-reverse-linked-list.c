@@ -18,6 +18,6 @@ struct ListNode* _reverseList(struct ListNode* curr, struct ListNode* prev){
 }
 
 struct ListNode* reverseList(struct ListNode* head){
-    if(head == NULL || head->next==NULL) return head;
+    if(head == NULL || head->next == NULL) return head;
     return _reverseList(head, NULL);
 }
