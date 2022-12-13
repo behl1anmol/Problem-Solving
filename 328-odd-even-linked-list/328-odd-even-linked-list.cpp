@@ -14,7 +14,7 @@ public:
         if(!head || !head->next) return head;
         ListNode* odd = head;
         ListNode* even = head->next;
-        ListNode* l2 = even;
+        ListNode* evenHead = even;
 
         while(odd->next && even->next){
             odd->next = even->next?even->next:NULL;
@@ -24,7 +24,7 @@ public:
         }
         
         
-        odd->next = l2;
+        odd->next = evenHead;
         return head;
     }
 
