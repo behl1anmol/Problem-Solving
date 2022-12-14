@@ -17,7 +17,7 @@ public:
         
         if(root->left){
             if(!root->left->right && !root->left->left) 
-                    return root->left->val + + sumOfLeftLeaves(root->right); 
+                    return root->left->val + sumOfLeftLeaves(root->right); 
         }
             
         return sumOfLeftLeaves(root->left) + sumOfLeftLeaves(root->right);
