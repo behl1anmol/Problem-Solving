@@ -22,8 +22,8 @@ public:
             else if(currLevel == maxLevel) sum += root->val;
         }
         else{
-            if(root->left) _deepestLeavesSum(root->left, currLevel+1, maxLevel, sum);
-            if(root->right) _deepestLeavesSum(root->right, currLevel+1, maxLevel, sum);
+            _deepestLeavesSum(root->left, currLevel+1, maxLevel, sum);
+            _deepestLeavesSum(root->right, currLevel+1, maxLevel, sum);
         }
     }
     int deepestLeavesSum(TreeNode* root) {
