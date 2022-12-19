@@ -13,6 +13,7 @@ class Solution {
 public:
     void _deepestLeavesSum(TreeNode* root, int currLevel, int &maxLevel, int &sum){
         
+        if(!root) return;
         if(!root->left && !root->right){
             if(currLevel > maxLevel){
                 maxLevel = currLevel;
@@ -26,7 +27,7 @@ public:
         }
     }
     int deepestLeavesSum(TreeNode* root) {
-        if(!root) return 0;
+
         int sum = 0;
         int level = 0;
         _deepestLeavesSum(root, 0, level, sum);
