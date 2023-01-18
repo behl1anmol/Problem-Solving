@@ -18,14 +18,9 @@ public:
         ListNode* prev = NULL;
         
         while(temp){
-            if(temp->val == val){ 
-                prev->next = temp->next;
-                temp = temp->next;
-            }
-            else{
-                prev = temp;
-                temp = temp->next;
-            }
+            if(temp->val == val) prev->next = temp->next;
+            else prev = temp;
+            temp = temp->next;
         }
         return head;
     }
