@@ -11,16 +11,9 @@
  */
 class Solution {
 public:
-    void _maxDepth(TreeNode* root, int currDepth, int &maxDepthTree){
-        if(root==NULL) return;
-        if(maxDepthTree < currDepth) maxDepthTree = currDepth;
-        _maxDepth(root->left, currDepth+1, maxDepthTree);
-        _maxDepth(root->right, currDepth+1, maxDepthTree);
-    }
     int maxDepth(TreeNode* root) {
         if(!root) return 0;
-        int maxDepthTree = 1;
-        _maxDepth(root, 1, maxDepthTree);
-        return maxDepthTree;
+        
+        return 1 + max(maxDepth(root->left),maxDepth(root->right));
     }
 };
