@@ -7,7 +7,7 @@ class Solution:
             elif exponent == 1:
                 return base%mod
             elif exponent%2==0:
-                hexp = ((exponent%mod)//2)%mod
+                hexp = ((exponent)//2)%mod
                 hres = exponentiation(base,hexp)
                 return (hres * hres)%mod
             else:
