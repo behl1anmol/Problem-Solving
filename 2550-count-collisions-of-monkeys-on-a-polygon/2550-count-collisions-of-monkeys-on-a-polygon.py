@@ -3,7 +3,7 @@ class Solution:
         mod = 1000000007
         def exponentiation(base, exponent):
             if exponent == 0:
-                return 1%mod
+                return 1
             elif exponent == 1:
                 return base%mod
             elif exponent%2==0:
