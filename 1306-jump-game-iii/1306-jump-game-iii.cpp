@@ -1,18 +1,32 @@
 class Solution {
 public:
     
-    bool _canReach(vector<int> &arr, vector<int> &visited ,int i){
+bool canReach(vector<int>& arr, int start) {
+
+        vector<int> vis(arr.size(),0);
         
-        if(i >= arr.size() || i < 0) return false;
-        if(visited[i]==1) return false;
-        if(arr[i] == 0) return true;
+        queue<int> q;
+        q.push(start);
+        vis[start] = 1;
+        
+        while(!q.empty()){
+            int front = q.front();
+            q.pop();
+            
+            if(arr[front]==0) return true;
+            vis[front] = 1;
+            int left = front - arr[front];
+            int right = front + arr[front];
 
-        visited[i] = 1;
-        return _canReach(arr, visited, i-arr[i]) | _canReach(arr,visited, i+arr[i]);
-    }
-    bool canReach(vector<int>& arr, int start) {
-
-        vector<int> visited(arr.size(),0);
-        return _canReach(arr, visited, start);
+            if((left >=0 && left < arr.size()) && vis[left] == 0){
+                q.push(left);
+            }
+            
+            if((right>=0 && right < arr.size()) && vis[right] == 0 ){
+                q.push(right);
+            }
+        }
+        
+        return false;        
     }
 };
