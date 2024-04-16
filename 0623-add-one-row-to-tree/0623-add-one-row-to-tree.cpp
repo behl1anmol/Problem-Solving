@@ -36,13 +36,10 @@ public:
             TreeNode *node = q.front();
             q.pop();
             TreeNode* newLeft = new TreeNode(val);
-            if(node->left){
-                newLeft->left = node->left;
-            }
             TreeNode* newRight = new TreeNode(val);
-            if(node->right){
-                newRight->right = node->right;
-            }
+
+            newLeft->left = node->left;
+            newRight->right = node->right;
             node->left = newLeft;
             node->right = newRight;
         }
