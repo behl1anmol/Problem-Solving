@@ -19,7 +19,7 @@ public:
         queue<TreeNode*> q;
 
         q.push(root);
-        while(!q.empty() && depth>2){
+        while(depth>2){
             depth--;
             int count = q.size();
 
