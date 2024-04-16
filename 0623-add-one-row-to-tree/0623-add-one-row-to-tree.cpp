@@ -21,7 +21,6 @@ public:
         q.push(root);
         while(!q.empty() && depth>2){
             depth--;
-            //cout<<depth;
             int count = q.size();
 
             while(count--){
@@ -33,12 +32,6 @@ public:
             }
 
         }
-       /* cout<<q.size()<<endl;
-        while(!q.empty()){
-            TreeNode* temp = q.front();
-            cout<<temp->val<<endl;
-            q.pop();
-        }*/
         while(!q.empty()){
             TreeNode *node = q.front();
             q.pop();
