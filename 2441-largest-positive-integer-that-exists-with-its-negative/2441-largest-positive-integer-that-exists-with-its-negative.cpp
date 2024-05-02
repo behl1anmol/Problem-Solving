@@ -5,6 +5,8 @@ public:
         int i = 0, j = n-1;
         
         sort(nums.begin(), nums.end());
+        
+        if(nums[0] > 0) return -1;
 
         while(i<j){
             if(abs(nums[i]) == nums[j]) return nums[j];
