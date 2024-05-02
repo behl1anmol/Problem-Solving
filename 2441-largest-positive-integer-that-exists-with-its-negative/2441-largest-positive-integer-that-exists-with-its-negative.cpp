@@ -6,11 +6,9 @@ public:
         
         sort(nums.begin(), nums.end());
         
-        if(nums[0] > 0) return -1;
-
         while(i<j){
-            if(abs(nums[i]) == nums[j]) return nums[j];
-            else if(abs(nums[i]) > nums[j]) i++;
+            if(nums[i] + nums[j] == 0) return nums[j];
+            else if(nums[i] + nums[j] < 0) i++;
             else j--;
         }
 
