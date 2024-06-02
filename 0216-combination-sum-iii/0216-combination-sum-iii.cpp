@@ -6,7 +6,7 @@ public:
             ans.push_back(ds);
             return;
         }
-        for(int i = idx; i< 9; i++){
+        for(int i = idx; i<= 9; i++){
 
             if(i > sum || ds.size() > k) break;
 
