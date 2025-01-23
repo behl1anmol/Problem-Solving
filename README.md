@@ -1579,9 +1579,18 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 ## Hash Table
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 ## Matrix
 |  |
 | ------- |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
+## String
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
