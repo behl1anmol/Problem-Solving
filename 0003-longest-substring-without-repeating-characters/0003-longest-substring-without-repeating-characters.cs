@@ -8,22 +8,21 @@ var windowStart = 0;
 
 for (var i = 0; i < n; i++)
 {
-    if (set.Contains(s[i]))
-    {
-        while (s[windowStart] != s[i])
+        if (set.Contains(s[i]))
         {
-            set.Remove(s[windowStart]);
+            while (s[windowStart] != s[i])
+            {
+                set.Remove(s[windowStart]);
+                windowStart++;
+            }
             windowStart++;
         }
-        windowStart++;
+        else
+        {
+            set.Add(s[i]);
+            ans = Math.Max(ans, i - windowStart + 1);
+        }
     }
-    else
-    {
-        set.Add(s[i]);
-        ans = Math.Max(ans, i - windowStart + 1);
-    }
-
-}
-return ans;
+    return ans;
     }
 }
