@@ -1593,4 +1593,20 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
+## Depth-First Search
+|  |
+| ------- |
+| [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
+## Graph
+|  |
+| ------- |
+| [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
+## Topological Sort
+|  |
+| ------- |
+| [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 <!---LeetCode Topics End-->
