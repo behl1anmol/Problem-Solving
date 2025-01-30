@@ -1596,17 +1596,24 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 ## Depth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Graph
 |  |
 | ------- |
+| [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Topological Sort
 |  |
 | ------- |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
+## Union Find
+|  |
+| ------- |
+| [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 <!---LeetCode Topics End-->
