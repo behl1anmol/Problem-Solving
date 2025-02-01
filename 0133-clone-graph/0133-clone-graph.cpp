@@ -40,10 +40,8 @@ public:
             q.pop();
             Node *orig = f;
             Node *cpy;
-            if (mp.find(orig) == mp.end())
-            {
-                mp[orig] = new Node(orig->val);
-            }
+            
+            if (mp.find(orig) == mp.end()) mp[orig] = new Node(orig->val);
             cpy = mp[orig];
             vector<Node *> nbrs;
             visited[orig] = 1;
