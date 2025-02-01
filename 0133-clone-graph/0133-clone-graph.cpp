@@ -23,10 +23,8 @@ class Solution {
 public:
     Node *cloneGraph(Node *node)
     {
-        if (node == NULL)
-        {
-            return node;
-        }
+        if (node == NULL) return node;
+
         map<Node *, int> visited;
         queue<Node *> q;
         map<Node *, Node *> mp;
@@ -36,11 +34,10 @@ public:
 
         while (!q.empty())
         {
-            auto f = q.front();
+            auto *orig = q.front();
             q.pop();
-            Node *orig = f;
             Node *cpy;
-            
+
             if (mp.find(orig) == mp.end()) mp[orig] = new Node(orig->val);
             cpy = mp[orig];
             vector<Node *> nbrs;
