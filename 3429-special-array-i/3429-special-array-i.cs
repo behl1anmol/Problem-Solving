@@ -1,28 +1,13 @@
 public class Solution {
-    bool checkEvenParity(int[] nums)
+    bool CheckParity(int[] nums, int evenParity)
     {
         for(int i = 0; i<nums.Length; i++)
         {
-            if(i%2 == 0 && nums[i]%2!=0)
+            if(i%2 == evenParity && nums[i]%2!=0)
             {
                 return false;
             }
-            else if(i%2 != 0 && nums[i]%2 == 0)
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-    bool checkOddParity(int[] nums)
-    {
-        for(int i = 0; i<nums.Length; i++)
-        {
-            if(i%2 != 0 && nums[i]%2!=0)
-            {
-                return false;
-            }
-            else if(i%2 == 0 && nums[i]%2 == 0)
+            else if(i%2 != evenParity && nums[i]%2 == 0)
             {
                 return false;
             }
@@ -35,7 +20,7 @@ public class Solution {
         //if nums[0] is even parity = 0 
         //if nums[0] is odd parity = 1
 
-        return nums[0]%2 == 0? checkEvenParity(nums) : checkOddParity(nums);
+        return CheckParity(nums, nums[0]%2==0?0:1);
 
     }
 }
