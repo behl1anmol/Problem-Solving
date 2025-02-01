@@ -1581,6 +1581,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 ## Matrix
 |  |
@@ -1597,16 +1598,19 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 ## Depth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Graph
 |  |
 | ------- |
+| [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Topological Sort
