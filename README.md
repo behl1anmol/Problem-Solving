@@ -1576,6 +1576,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 |  |
 | ------- |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
+| [3429-special-array-i](https://github.com/behl1anmol/Problem-Solving/tree/master/3429-special-array-i) |
 ## Hash Table
 |  |
 | ------- |
