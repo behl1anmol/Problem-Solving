@@ -1,7 +1,8 @@
 class NumberContainers {
-public:
+private:
     map<int, set<int>> mpq;
     map<int,int> mp;
+public:
     NumberContainers() {
         
     }
