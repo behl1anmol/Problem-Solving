@@ -3,9 +3,7 @@ private:
     map<int, set<int>> mpq;
     map<int,int> mp;
 public:
-    NumberContainers() {
-        
-    }
+    NumberContainers() {}
 
      void change(int index, int number) {
         
