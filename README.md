@@ -1575,6 +1575,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 ## Array
 |  |
 | ------- |
+| [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3429-special-array-i](https://github.com/behl1anmol/Problem-Solving/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -1584,6 +1585,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
+| [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Matrix
@@ -1640,4 +1642,12 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 |  |
 | ------- |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+## Math
+|  |
+| ------- |
+| [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
+## Counting
+|  |
+| ------- |
+| [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 <!---LeetCode Topics End-->
