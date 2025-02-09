@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<int> queryResults(int limit, vector<vector<int>>& queries) {
-        unordered_map<int, unordered_set<int>> st;
+        unordered_map<int, int> distinct_colors;
         unordered_map<int, int> balls;
         vector<int> ans;
         int n = queries.size();
@@ -15,12 +15,12 @@ public:
             if(balls.contains(num))
             {
                 int prevColor = balls[num];
-                st[prevColor].erase(num);
-                if(st[prevColor].size() == 0) st.erase(prevColor);
+                distinct_colors[prevColor]--;
+                if(distinct_colors[prevColor] == 0) distinct_colors.erase(prevColor);
             }
             balls[num] = color;
-            st[color].insert(num);
-            ans.push_back(st.size());
+            distinct_colors[color]++;
+            ans.push_back(distinct_colors.size());
         }
         return ans;
     }
