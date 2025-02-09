@@ -12,7 +12,7 @@ public:
             int color = query[1];
 
             //balls colored
-            if(balls.find(num) != balls.end())
+            if(balls.contains(num))
             {
                 int prevColor = balls[num];
                 distinct_colors[prevColor]--;
