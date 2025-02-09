@@ -1577,6 +1577,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 | ------- |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3429-special-array-i](https://github.com/behl1anmol/Problem-Solving/tree/master/3429-special-array-i) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Hash Table
 |  |
 | ------- |
@@ -1584,6 +1585,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Matrix
 |  |
 | ------- |
@@ -1634,4 +1636,8 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 |  |
 | ------- |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
+## Simulation
+|  |
+| ------- |
+| [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 <!---LeetCode Topics End-->
