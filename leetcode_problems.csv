@@ -13,8 +13,8 @@ Title,URL,Completed
 113. Path Sum II (reference types in C# are by default passsed as ref),https://leetcode.com/problems/path-sum-ii/,Yes
 1143. Longest Common Subsequence,https://leetcode.com/problems/longest-common-subsequence/,No
 1155. Number of Dice With Target Sum,https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/description/,No
-118. Pascal's Triangle,https://leetcode.com/problems/pascals-triangle/,No
-12. Integer to Roman,https://leetcode.com/problems/integer-to-roman/,No
+118. Pascal's Triangle,https://leetcode.com/problems/pascals-triangle/,Yes
+12. Integer to Roman,https://leetcode.com/problems/integer-to-roman/,Yes
 1239. Maximum Length of a Concatenated String with Unique Characters,https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/,No
 128. Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence/,No
 129. Sum Root to Leaf Numbers,https://leetcode.com/problems/sum-root-to-leaf-numbers,No
