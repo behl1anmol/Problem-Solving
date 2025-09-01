@@ -5,26 +5,19 @@ public class Solution {
         int n1 = s.Count();
         int n2 = t.Count();
 
-        if(n1 != n2)
+        for(int i=0; i< n1; i++)
         {
-            return false;
+            if(dict.ContainsKey(s[i])) dict[s[i]]++;
+            else dict[s[i]] = 1;
         }
-        else
+
+        foreach(var i in t)
         {
-            for(int i=0; i< n1; i++)
-            {
-                if(dict.ContainsKey(s[i])) dict[s[i]]++;
-                else dict[s[i]] = 1;
-            }
-
-            foreach(var i in t)
-            {
-                if(!dict.ContainsKey(i)) return false;
-                else dict[i]--;
-            }
-
-            if(dict.Any(d => d.Value != 0)) return false;
-            return true;
+            if(!dict.ContainsKey(i)) return false;
+            else dict[i]--;
         }
+
+        if(dict.Any(d => d.Value != 0)) return false;
+        return true;
     }
 }
