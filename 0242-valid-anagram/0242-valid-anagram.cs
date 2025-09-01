@@ -3,7 +3,6 @@ public class Solution {
         Dictionary<char, int> dict= new Dictionary<char, int>();
 
         int n1 = s.Count();
-        int n2 = t.Count();
 
         for(int i=0; i< n1; i++)
         {
