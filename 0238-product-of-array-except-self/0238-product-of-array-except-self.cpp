@@ -18,11 +18,11 @@ public:
             suffix[i] = suffix[i+1] * nums[i];
         }
 
-        for(int i=0; i<n; i++)
+        ans[0] = suffix[1];
+        ans[n-1] = prefix[n-2];
+        for(int i=1; i<=n-2; i++)
         {
-            auto prefix_m = (i==0? 1 : prefix[i-1]);
-            auto suffix_m = (i==(n-1)? 1 : suffix[i+1]);
-            ans[i] = prefix_m * suffix_m;
+            ans[i] = prefix[i-1] * suffix[i+1];
         }
 
         return ans;
