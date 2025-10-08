@@ -1,27 +1,23 @@
 public class Solution {
     public bool IsPalindrome(string s) {
+        StringBuilder sb = new StringBuilder();
 
-        if(string.IsNullOrEmpty(s)) return true;
-
-        var strbuilder = new StringBuilder();
         foreach(var ch in s)
         {
-            var lwr = char.ToLower(ch);
-            if((lwr >= 'a' && lwr <= 'z') || (lwr >= '0' && lwr <= '9'))
+            if(char.IsLetterOrDigit(ch))
             {
-                strbuilder.Append(lwr);
+                sb.Append(Char.ToLower(ch));
             }
         }
-
-        int i = 0;
-        int j = strbuilder.Length-1;
-
-        while(i<=j)
+        int left = 0;
+        int right = sb.Length-1;
+        while(left < right)
         {
-            if(strbuilder[i]!=strbuilder[j]) return false;
-            i++;j--;
+            if(sb[left] != sb[right]) return false;
+            left++;
+            right--;
         }
-
-        return true;    
+        return true;
+        
     }
 }
