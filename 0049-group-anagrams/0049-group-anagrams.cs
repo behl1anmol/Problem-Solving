@@ -40,7 +40,7 @@ public class Solution {
             foreach(var c in str)
                 count[c - 'a']++;
             
-            string key = string.Join("", count);
+            string key = string.Join(",", count);
              if(!dict.ContainsKey(key))
                 dict[key] = new List<string>();
             
