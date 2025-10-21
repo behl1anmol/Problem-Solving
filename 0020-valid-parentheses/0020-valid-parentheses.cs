@@ -1,28 +1,24 @@
 public class Solution {
+
     public bool IsValid(string s) {
         var st = new Stack<char>();
-        st.Push(s[0]);
 
-        for(int i=1;i<s.Length;i++)
+        for(int i=0;i<s.Length;i++)
         {
             if(s[i] == '(' || s[i] == '{' || s[i] == '[')
             {
                 st.Push(s[i]);
             }
-            else if(s[i] == '}')
-            {
-                if(!st.Any()) return false;
-                else if(st.Peek() == '{') st.Pop();
-            }
-            else if(s[i] == ')')
-            {
-                if(!st.Any()) return false;
-                else if(st.Peek() == '(') st.Pop();
-            }
             else
             {
-                if(!st.Any()) return false;
-                else if(st.Peek() == '[') st.Pop();
+                if(st.Count() == 0) return false;
+                var top = st.Pop();
+                if ((s[i] == ')' && top != '(') ||
+                    (s[i] == '}' && top != '{') ||
+                    (s[i] == ']' && top != '['))
+                {
+                    return false;
+                }
             }
         }
         return st.Count() == 0;
