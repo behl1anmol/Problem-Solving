@@ -21,7 +21,7 @@ public class Solution {
             }
             else
             {
-                if(nums[mid] <= target && nums[r] > target)
+                if(nums[mid] < target && nums[r] >= target)
                 {
                     l = mid+1;
                 }
