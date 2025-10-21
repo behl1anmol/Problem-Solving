@@ -1,15 +1,16 @@
 public class Solution {
-    public bool Search(int[] nums, int target, int l, int r)
-    {
+    public bool Search(int[] nums, int target) {
+        var l = 0;
+        var r = nums.Length-1;
         var mid = l +(r-l)/2;
 
         while(l<=r)
         {
             if(nums[mid] == target) return true;
-
-            if(nums[mid] == nums[l])
+            else if(nums[mid] == nums[l])
             {
-                return Search(nums, target, l, mid-1) || Search(nums, target, mid+1, r);
+                l++;
+                continue;
             }
             else if(nums[mid] > nums[l])
             {
@@ -38,10 +39,5 @@ public class Solution {
         }
 
         return false;
-    }
-    public bool Search(int[] nums, int target) {
-        var l = 0;
-        var r = nums.Length-1;
-        return Search(nums, target, l, r);
     }
 }
