@@ -1,51 +1,38 @@
 public class Solution {
-
-    private string SortString(string s)
+    public string Encode(string s)
     {
-        return new string(s.OrderBy(c=>c).ToArray());
-    }
-
-    // this is an O(N*KlogK) solution where k is largest string length
-    public IList<IList<string>> GroupAnagramsUnoptimized(string[] strs) 
-    {
-        var newStrs = new List<string>(); 
-        foreach(var s in strs)
-            newStrs.Add(SortString(s));
-        
-        IList<IList<string>> ans = new List<IList<string>>();
-        Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
-        for(int i=0;i<newStrs.Count();i++)
+        int[] arr = new int[26];
+        foreach(var c in s)
         {
-            if(!dict.ContainsKey(newStrs[i]))
-                dict[newStrs[i]] = new List<string>();
-            
-            dict[newStrs[i]].Add(strs[i]);
+            arr[c-'a'] += 1;
         }
-
-        foreach(var (key, value) in dict)
-        {
-            ans.Add(value);
-        }
-        return ans;
+        return string.Join(",", arr);
     }
-
-    //we can do it in O(n*k)
     public IList<IList<string>> GroupAnagrams(string[] strs)
     {
-        Dictionary<string, List<string>> dict = new Dictionary<string, List<string>>();
+        var dict = new Dictionary<string, List<string>>();
 
         foreach(var str in strs)
         {
-            int[] count = new int[26];
-            foreach(var c in str)
-                count[c - 'a']++;
-            
-            string key = string.Join(",", count);
-             if(!dict.ContainsKey(key))
-                dict[key] = new List<string>();
-            
-            dict[key].Add(str);
+            var encodedString = Encode(str);
+
+            if(!dict.ContainsKey(encodedString))
+            {
+                dict.Add(encodedString, [str]);
+            }
+            else
+            {
+                dict[encodedString].Add(str);
+            }
         }
-        return new List<IList<string>>(dict.Values);
+
+        var res = new List<IList<string>>();
+        foreach(var (key,val) in dict)
+        {
+            res.Add(val);
+        }
+
+        return res;
+        
     }
 }
