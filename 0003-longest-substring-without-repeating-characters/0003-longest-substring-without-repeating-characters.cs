@@ -12,7 +12,6 @@ public class Solution {
                 i = Math.Max(dict[s[j]] + 1, i);
                 dict[s[j]] = j; 
             }
-            //Console.WriteLine($"{i}:{j}");
             len = Math.Max((j-i)+1, len);
         }
 
