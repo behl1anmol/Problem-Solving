@@ -1,13 +1,29 @@
 public class Solution {
     public int FirstUniqChar(string s) {
-        var c = s.GroupBy(chr => chr)
-                 .Select(g => new {k = g.Key, v = g.Count()})
-                 .Where(e => e.v == 1)
-                 .FirstOrDefault()?.k??' ';
-        if(c != ' ')
+        var hash = new Dictionary<char, int>();
+        var ct = new Dictionary<char, int>();
+
+        for(int i = 0; i < s.Length; i++)
         {
-            return s.IndexOf(c);
+            if(!hash.ContainsKey(s[i]))
+            {
+                hash[s[i]] = i;
+            }
+            if(!ct.ContainsKey(s[i]))
+                ct[s[i]] = 1;
+            else
+                ct[s[i]]+=1;
         }
-        return -1;
+        
+        int res = s.Length+1;
+        foreach(var (key,val) in ct)
+        {
+            if(val == 1)
+            {
+                return hash[key];
+            }
+        }
+
+        return res == s.Length+1 ? -1:res;
     }
 }
