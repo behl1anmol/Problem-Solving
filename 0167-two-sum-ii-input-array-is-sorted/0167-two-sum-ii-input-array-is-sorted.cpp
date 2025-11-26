@@ -1,28 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-        int l = 0;
-        int r = numbers.size()-1;
-        vector<int> arr(2);
-
-        while(l<r)
-        {
-            int sum = numbers[l]+numbers[r];
-            if(sum == target)
-            {
-                arr[0] = l+1;
-                arr[1] = r+1;
-                return arr;
+        int n = numbers.size();
+        vector<int>ans;
+        for(int i=0,j=n-1;i<n&&j>=0;){
+            if(numbers[i]+numbers[j]==target){
+                ans.push_back(i+1);
+                ans.push_back(j+1);
+                break;
             }
-            else if(sum < target)
-            {
-                l++;
-            }
+            else if(numbers[i]+numbers[j]>target)
+                j--;
             else
-            {
-                r--;
-            }
+                i++;
         }
-        return arr;
+        
+        return ans;
     }
 };
