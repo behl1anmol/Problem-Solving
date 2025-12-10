@@ -1,72 +1,40 @@
 class Solution {
-private:
-    char arr[3][3] = {'E'};
-    int n = sizeof(arr)/sizeof(arr[0]);
-
-    bool CheckRow(int idx, char piece)
-    {
-        for(int k = 0; k<n;k++)
-        {
-            if(arr[idx][k] != piece) return false;
-        }
-        return true;
-    }
-
-    bool CheckColumn(int idx, char piece)
-    {
-        for(int k = 0; k < n; k++)
-        {
-            if(arr[k][idx] != piece) return false;
-        }
-        return true;
-    }
-
-    bool CheckLeftDiagnol(char piece)
-    {
-        for(int k=0; k<n;k++)
-        {
-            if(arr[k][k] != piece) return false;
-        }
-        return true;
-    }
-
-    bool CheckRightDiagnol(char piece)
-    {
-        for(int k=0; k<n;k++)
-        {
-            if(arr[k][n-1-k] != piece) return false;
-        }
-        return true;
-    }
 public:
     string tictactoe(vector<vector<int>>& moves) {
-        
-        char players[2][2] = {{'A','X'},{'B','O'}};
-        int chance = 0;
+        const int n = 3;
+        int row[n] = {0};
+        int column[n] = {0};
+        int diag = 0;
+        int antidiag = 0;
+        int chance = 1; //A=1, B=-1
+
         for(int i=0;i<moves.size();i++)
         {
-            char player = players[chance%2][0];
-            char piece = players[chance%2][1];
-            int x = moves[i][0];
-            int y = moves[i][1];
-            //cout<<"Player:"<<player<<endl;
-            //cout<<"piece:"<<piece<<endl;
-            //cout<<"x:"<<x<<" "<<"y:"<<y<<endl;
-            arr[x][y] = piece;
-            bool result = false;
+            int r = moves[i][0];
+            int c = moves[i][1];
 
-            result = CheckRow(x, piece) || CheckColumn(y, piece) || CheckRightDiagnol(piece) || CheckLeftDiagnol(piece) ;
-            if(result == true)
+            row[r] += chance;
+            column[c] += chance;
+
+            if(r==c)
             {
-                return string(1,player);
+                diag+=chance;
             }
-             
-            chance++;
+            if(r+c == n-1)
+            {
+                antidiag+=chance;
+            }
+
+            if(abs(row[r])==n || abs(column[c])==n || abs(diag)==n || abs(antidiag) == n)
+            {
+                return chance == 1?"A":"B";
+            }
+            chance = -chance;
+            cout<<"r:"<<r<<" "<<"c:"<<c<<" "<<row[r]<<" "<<column[c]<<endl;
         }
-        int ele = moves.size();
-        if(ele == 9) return "Draw";
-        
-        return "Pending";
+
+        if(moves.size() == n*n) return "Draw";
+        else return "Pending";
 
     }
 };
