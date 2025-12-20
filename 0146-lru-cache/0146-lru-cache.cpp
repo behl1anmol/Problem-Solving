@@ -73,28 +73,47 @@ public:
         d->previous = NULL;
 
         delete d;
-        cout<<"key to delete:"<<key<<endl;
+        //cout<<"key to delete:"<<key<<endl;
         hashTable.erase(key);
     }
 
     void RemapToHead(int key)
     {
         DoublyLinkedList *node = hashTable[key];
-        if(node->next == NULL & node->previous == NULL) return;
+        //if node is a single node
+        if(node->next == NULL && node->previous == NULL) return;
 
-        node->previous->next = node->next;
-        if(node->next != NULL)
+        //if node is a head node
+        if(node->next != NULL && node->previous == NULL) return;
+
+        //if node is a tail node
+        if(node->next == NULL && node->previous != NULL)
         {
-            node->next->previous = node->previous;
+            DoublyLinkedList *currHead = head;
+            DoublyLinkedList *prevNode = node->previous;
+
+            prevNode->next = NULL;
+            tail = prevNode;
+
+            node->previous = NULL;
+            currHead->previous = node;
+            node->next = currHead;
+            head = node;
+            hashTable[key] = head;
+            return;
         }
-        else
-        {
-            tail = node->previous;
-        }
+
+        //if node is a middle node
+        DoublyLinkedList *prevNode = node->previous;
+        DoublyLinkedList *nextNode = node->next;
+        prevNode->next = nextNode;
+        nextNode->previous = prevNode;
+
         node->previous = NULL;
-
-        InsertHead(node->value.first, node->value.second);
-        delete node;
+        head->previous = node;
+        node->next = head;
+        head = node;
+        hashTable[key] = head;
 
     }
 
@@ -104,7 +123,7 @@ public:
         {
             hashTable[key]->value.second = value;
             RemapToHead(key);
-            Print();
+            //Print();
             return;
         }
 
@@ -112,7 +131,7 @@ public:
         if(capacity > hashTable.size())
         {
             InsertHead(key,value);
-            Print();
+            //Print();
             return;
         }
 
@@ -121,10 +140,10 @@ public:
         if(capacity <= hashTable.size())
         {
             DeleteTail();
-            cout<<hashTable.size()<<endl;
+            //cout<<hashTable.size()<<endl;
             InsertHead(key, value);
         }
-        Print();
+        //Print();
 
     }
 
