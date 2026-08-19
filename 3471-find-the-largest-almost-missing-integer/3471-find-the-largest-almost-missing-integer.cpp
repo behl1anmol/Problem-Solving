@@ -1,37 +1,41 @@
 class Solution {
 public:
     int largestInteger(vector<int>& nums, int k) {
-        map<int,int> mp;
+        int n = nums.size();
+        int freq[51] = {};
 
-        for(int i=0; i< nums.size(); i++)
+        for(int i=0;i<n;i++)
         {
-            mp[nums[i]] = 0;
+            freq[nums[i]]++;
         }
 
-        for(int i=0; i< nums.size()-k+1; i++)
+        //if a single element in subarray return the largest element
+        if(k==1)
         {
-            unordered_map<int,int> seen;
-            for(int j = 0; j < k; j++)
+            for(int i = 50; i >= 0 ; i--)
             {
-               // cout<<nums[i+j]<<" ";
-                if(seen.find(nums[i+j]) != seen.end()) continue;
-                mp[nums[i+j]]++;
-                seen[nums[i+j]] = 1;
+                if(freq[i] == 1) return i;
             }
-            //cout<<endl;
+            return -1;
         }
 
-        //for(const auto &pair : mp)
-        //{
-        //    cout<<pair.first<<":"<<pair.second<<endl;
-        //}
-
-        int res = -1;
-        for (const auto &pair : mp)
+        //if subarray size is whole array then return the largest element
+        int answer  = -1;
+        if(k == n)
         {
-            if(pair.second == 1)
-                res = max(res,pair.first);
+            for(int i=0;i<n;i++)
+            {
+                answer = max(answer, nums[i]);
+            } 
+            return answer;
         }
-        return res;
+
+        answer = -1;
+        //since the interior element will never be the one to occur once in a subarray 
+        //we can check only for first and the last element
+        if(freq[nums[0]] == 1) answer = max(answer,nums[0]);
+        if(freq[nums[n-1]] == 1) answer = max(answer, nums[n-1]);
+
+        return answer;
     }
 };
