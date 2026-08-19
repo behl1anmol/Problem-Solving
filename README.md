@@ -1573,15 +1573,16 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3429-special-array-i](https://github.com/behl1anmol/Problem-Solving/tree/master/3429-special-array-i) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/behl1anmol/Problem-Solving/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
 ## Hash Table
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
@@ -1589,77 +1590,78 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 | [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
+| [3471-find-the-largest-almost-missing-integer](https://github.com/behl1anmol/Problem-Solving/tree/main/3471-find-the-largest-almost-missing-integer/) | Easy |
 ## Matrix
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 ## String
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 ## Sliding Window
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/behl1anmol/Problem-Solving/tree/master/0003-longest-substring-without-repeating-characters) |
 ## Depth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 ## Breadth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 ## Graph
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0133-clone-graph](https://github.com/behl1anmol/Problem-Solving/tree/master/0133-clone-graph) |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Topological Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0820-find-eventual-safe-states](https://github.com/behl1anmol/Problem-Solving/tree/master/0820-find-eventual-safe-states) |
 ## Union Find
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0684-redundant-connection](https://github.com/behl1anmol/Problem-Solving/tree/master/0684-redundant-connection) |
 ## Design
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
 ## Heap (Priority Queue)
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
 ## Ordered Set
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2434-design-a-number-container-system](https://github.com/behl1anmol/Problem-Solving/tree/master/2434-design-a-number-container-system) |
 ## Simulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/behl1anmol/Problem-Solving/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Math
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 ## Counting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 ## Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 ## Binary Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 <!---LeetCode Topics End-->
