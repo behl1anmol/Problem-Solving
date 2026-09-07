@@ -1575,6 +1575,7 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/behl1anmol/Problem-Solving/tree/main/0238-product-of-array-except-self/) | Medium |
 | [2448-count-number-of-bad-pairs](https://github.com/behl1anmol/Problem-Solving/tree/master/2448-count-number-of-bad-pairs) |
 | [2685-first-completely-painted-row-or-column](https://github.com/behl1anmol/Problem-Solving/tree/master/2685-first-completely-painted-row-or-column) |
 | [3429-special-array-i](https://github.com/behl1anmol/Problem-Solving/tree/master/3429-special-array-i) |
@@ -1664,4 +1665,8 @@ Collection of Coding questions to ace the coding interview by [takeUforward](htt
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/behl1anmol/Problem-Solving/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/behl1anmol/Problem-Solving/tree/main/0238-product-of-array-except-self/) | Medium |
 <!---LeetCode Topics End-->
